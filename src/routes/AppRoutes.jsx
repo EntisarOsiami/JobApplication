@@ -1,24 +1,26 @@
-import { createBrowserRouter, RouterProvider } from "react-router";
-import Layout from "../layout/Layout";
-import Application from "../components/ApplyForm";
+import { createBrowserRouter, RouterProvider } from 'react-router';
+import Layout from '../layout/Layout';
+import HomePage from '../pages/HomePage';
+import ApplyPage from '../pages/ApplyPage';
+import Results from '../pages/Results';
 
 function AppRoutes() {
   const AppRouter = createBrowserRouter([
     {
-      path: "/",
+      path: '/',
       element: <Layout />,
       children: [
         {
-          path: "/",
-          element: <Application />,
+          path: '/',
+          element: <HomePage />,
         },
         {
-          path: "/application",
-          element: <div>Application</div>,
+          path: '/applyjob',
+          element: <ApplyPage />,
         },
         {
-          path: "/about",
-          element: <div>About</div>,
+          path: '/thankyou',
+          element: <Results />,
         },
       ],
     },

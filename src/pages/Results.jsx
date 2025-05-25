@@ -2,10 +2,10 @@ import React from 'react'
 import Application from '../components/Application'
 
 
-function ApplicationResults() {
+function Results() {
   return (
     <div><Application/></div>
   )
 }
 
-export default ApplicationResults
+export default Results

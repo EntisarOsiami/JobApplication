@@ -1,6 +1,6 @@
 import React from "react";
 import ApplyForm from "../components/ApplyForm";
-function ApplicationPage() {
+function ApplyPage() {
   return (
     <>
       <ApplyForm />
@@ -8,4 +8,4 @@ function ApplicationPage() {
   );
 }
 
-export default ApplicationPage;
+export default ApplyPage;
